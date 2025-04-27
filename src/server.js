@@ -1,4 +1,7 @@
 import express from 'express';
+import pkg from 'http-status-codes';
+const { STATUS_CODES } = pkg;
+
 const app = express();
 const port = 4000;
 app.get('/hello' ,( req,res) => {
